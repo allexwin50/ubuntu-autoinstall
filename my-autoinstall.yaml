@@ -1,0 +1,28 @@
+#cloud-config
+autoinstall:
+    version: 1
+    identity:
+        realname: 'David Allex'
+        hostname: ubuntu-desktop
+        username: allex
+        password: '$y$j9T$F741i4CFO5LDm2h0sbtK5.$o3gaXLqxk0jJKpbE8aak6XAABDwhvzA7VNKMVnXkWf7'
+    locale: pt_BR.utf8
+    keyboard:
+        layout: br
+    timezone: "America/Maceio"   
+    packages:
+        - libreoffice
+        - gimp
+        - git
+        - wget
+    snaps:
+        - name: spotify
+          channel: stable
+          classic: false
+    codecs:
+        install: true
+    drivers:
+        install: true
+    updates: all
+    shutdown: reboot
+
