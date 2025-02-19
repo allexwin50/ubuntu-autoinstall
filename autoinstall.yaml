@@ -1,4 +1,5 @@
 #cloud-config
+#use mkpasswd to create password
 autoinstall:
     version: 1
     identity:
